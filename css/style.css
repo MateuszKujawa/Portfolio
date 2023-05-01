@@ -8,7 +8,7 @@ Fonts
 Variables
 -----------------*/
 :root{
-    --main-color: #e02f6b;
+    --main-color: rgb(3, 101, 131);
     --blue: #0000ff;
     --blue-dark: #18293c;
     --orange: #ffa500;
@@ -19,6 +19,10 @@ Variables
     --white-alpha-40: rgba(255, 255, 255, 0.40);
     --white-alpha-25: rgba(255, 255, 255, 0.25);
     --backdrop-filter-blur: blur(5px);
+    --light-blue: #0dd1b7bd;
+    --dark-green: rgb(10, 35, 82);
+    --sizzling-red: #f53b57;
+    --green-little-blue: rgb(3, 101, 131); 
 }
 
 
@@ -37,7 +41,7 @@ Global settings
 }
 body{
     min-height: 100vh;
-    background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light));
+    background-image: linear-gradient(to bottom right, var(--light-blue), var(--dark-green));
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
@@ -146,7 +150,7 @@ Section Title
     background-color: var(--white);
 }
 ::-webkit-scrollbar-thumb{
-    background-color: var(--main-color);
+    background-color: var(--sizzling-red);
 }
 
 
@@ -161,10 +165,10 @@ button{
 .btn{
     line-height: 1.5;
     background-color: var(--white-alpha-25);
-    padding: 10px 28px;
+    padding: 15px 25px;
     display: inline-block;
-    border-radius: 30px;
-    color: var(--main-color);
+    border-radius: 8px;
+    color: var(--green-little-blue);
     font-weight: 500;
     text-transform: capitalize;
     font-family: inherit;
@@ -183,7 +187,7 @@ button{
     top: 0;
     height: 100%;
     width: 0%;
-    background-color: var(--main-color);
+    background-color: var(--green-little-blue);
     z-index: -1;
     transition: width 0.3s ease;
 }
@@ -740,9 +744,9 @@ Portfolio section
 }
 .contact-form .input-control{
     display: block;
-    width: 100%;
-    height: 50px;
-    border-radius: 25px;
+    width: 80%;
+    height: 40px;
+    border-radius: 8px;
     border: none;
     font-family: inherit;
     font-weight: 400;
@@ -754,13 +758,14 @@ Portfolio section
     transition: border-color 0.3s ease;
 }
 .contact-form .input-control:focus{
-    border-color: var(--white-alpha-40);
+    border-color: var(--green-little-blue);
 }
 .contact-form textarea.input-control{
     height: 120px;
     resize: none;
     padding-top: 15px;
 }
+
 .contact-info-item{
     margin: 0 0 30px;
     padding: 0 0 0 20px;
@@ -786,6 +791,9 @@ Portfolio section
 .contact-info-item .social-links a:hover{
     background-color: var(--main-color);
     color: var(--white);
+}
+.contact-form button{
+    border: 0;
 }
 
 
