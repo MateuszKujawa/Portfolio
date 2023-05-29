@@ -336,6 +336,7 @@ Header section
     background-color: var(--main-color);
     position: relative;
     transition: background-color 0.3s ease;
+    
 }
 .header.active .nav-toggler span{
     background-color: transparent;
@@ -367,6 +368,10 @@ Header section
 .header:not(.active) .nav-toggler:hover span::before,
 .header:not(.active) .nav-toggler:hover span::after{
     width: 50%;
+}
+
+.nav-toggler:hover{
+    background-color: #ffffff8e;
 }
 
 .header .nav{
