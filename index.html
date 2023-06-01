@@ -13,7 +13,9 @@
     
 </head>
 <body>
-    
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
     <!-- Page Loader -->
     <div class="page-loader">
         <div></div>
@@ -219,98 +221,8 @@
                     </div>
                     <!-- Portfolio item end -->
 
-                    <!-- Portfolio item -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-thumbnail">
-                            <img src="" alt="project3">
-                        </div>
-                        <h3 class="portfolio-item-title">StopWatch - project</h3>
-                        <button type="button" class="btn view-project-btn">view project</button>
-                        <div class="portfolio-item-details">
-                            <div class="description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tenetur voluptatem consectetur numquam, minus sed optio beatae nobis deserunt obcaecati voluptas, tempora aliquam corrupti sunt vitae id facere pariatur officia!</p>
-                            </div>
-                            <div class="general-info">
-                                <ul>
-                                    <li>Created - <span>16 April 2023</span></li>
-                                    <li>technologies used - <span>HTML, CSS, JS</span></li>
-                                    <li>Role - <span>Frontend</span></li>
-                                    <li>View Online - <span><a href="#" target="_blank">www.stopwatchME.com</a></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Portfolio item end -->
+                    
 
-                    <!-- Portfolio item -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-thumbnail">
-                            <img src="img/budgetApp.JPG" alt="project3">
-                        </div>
-                        <h3 class="portfolio-item-title">Website - FitApp.com</h3>
-                        <button type="button" class="btn view-project-btn">view project</button>
-                        <div class="portfolio-item-details">
-                            <div class="description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tenetur voluptatem consectetur numquam, minus sed optio beatae nobis deserunt obcaecati voluptas, tempora aliquam corrupti sunt vitae id facere pariatur officia!</p>
-                            </div>
-                            <div class="general-info">
-                                <ul>
-                                    <li>Created - <span>16 April 2023</span></li>
-                                    <li>technologies used - <span>HTML, CSS, JS, Bootstrap</span></li>
-                                    <li>Role - <span>Frontend</span></li>
-                                    <li>View Online - <span><a href="#" target="_blank">www.FitApp.com</a></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Portfolio item end -->
-
-                    <!-- Portfolio item -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-thumbnail">
-                            <img src="img/fitApp.JPG" alt="project3">
-                        </div>
-                        <h3 class="portfolio-item-title">Website - FitApp.com</h3>
-                        <button type="button" class="btn view-project-btn">view project</button>
-                        <div class="portfolio-item-details">
-                            <div class="description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tenetur voluptatem consectetur numquam, minus sed optio beatae nobis deserunt obcaecati voluptas, tempora aliquam corrupti sunt vitae id facere pariatur officia!</p>
-                            </div>
-                            <div class="general-info">
-                                <ul>
-                                    <li>Created - <span>16 April 2023</span></li>
-                                    <li>technologies used - <span>HTML, CSS, JS, Bootstrap</span></li>
-                                    <li>Role - <span>Frontend</span></li>
-                                    <li>View Online - <span><a href="#" target="_blank">www.FitApp.com</a></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Portfolio item end -->
-
-
-                    <!-- Portfolio item -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-thumbnail">
-                            <img src="img/stopWatch.JPG" alt="project3">
-                        </div>
-                        <h3 class="portfolio-item-title">Website - FitApp.com</h3>
-                        <button type="button" class="btn view-project-btn">view project</button>
-                        <div class="portfolio-item-details">
-                            <div class="description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tenetur voluptatem consectetur numquam, minus sed optio beatae nobis deserunt obcaecati voluptas, tempora aliquam corrupti sunt vitae id facere pariatur officia!</p>
-                            </div>
-                            <div class="general-info">
-                                <ul>
-                                    <li>Created - <span>16 April 2023</span></li>
-                                    <li>technologies used - <span>HTML, CSS, JS, Bootstrap</span></li>
-                                    <li>Role - <span>Frontend</span></li>
-                                    <li>View Online - <span><a href="#" target="_blank">www.FitApp.com</a></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Portfolio item end -->
 
                 </div>
             </div>
@@ -393,8 +305,29 @@
         </div>
     </div>
     <!-- Portfolio Item Details Popup end -->
+    <script src="js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".portfolio-item-thumbnail"), {
+            max: 25,
+            speed: 1000,
+            glare: true,
+            "max-glare": 1,
+        });
 
+        VanillaTilt.init(document.querySelectorAll(".btn"), {
+            max: 15,
+            speed: 1500,
+            glare: true,
+            "max-glare": 1,
+        });
 
+        VanillaTilt.init(document.querySelectorAll(".img-box"), {
+            max: 5,
+            speed: 1000,
+        });
+
+       
+    </script>
     <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>
