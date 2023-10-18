@@ -1221,6 +1221,8 @@ Portfolio section
 }
 
 
+
+
 /* Portfolio Popup */
 .portfolio-popup{
     position: fixed;
@@ -1365,6 +1367,10 @@ Portfolio section
 .contact-form button{
     border: 0;
 }
+
+#send_form_status{border: 1px dashed #ccc;display: none; padding: 0 10px; margin: 10px 0}
+.status_ok{color: #060}
+.status_err{color: #F00};
 
 
 /* Responive */
